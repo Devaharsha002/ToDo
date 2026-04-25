@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>📝 Todo Tracker</h1>
+      <p class="subtitle">Keep track of your tasks</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Input Section -->
+      <div class="input-section">
+        <form id="todoForm">
+          <input
+            type="text"
+            id="todoInput"
+            placeholder="Add a new todo..."
+            autocomplete="off"
+            required
+          >
+          <button type="submit" class="btn btn-add">Add Todo</button>
+        </form>
+      </div>
+
+      <!-- Todos List -->
+      <section class="todos-section">
+        <h2>Your Todos</h2>
+        <ul id="todoList" class="todo-list">
+          <!-- Todos will be inserted here by JavaScript -->
+          <li class="empty-state">No todos yet. Add one to get started!</li>
+        </ul>
+      </section>
+
+      <!-- Stats Section -->
+      <div class="stats">
+        <p><strong id="totalTodos">0</strong> total</p>
+        <p><strong id="completedTodos">0</strong> completed</p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Todo Tracker | Built with Node.js & Express</p>
+    </footer>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
